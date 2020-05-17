@@ -9,7 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import org.springframework.web.servlet.ModelAndView;
@@ -34,7 +33,7 @@ public class MainController {
         }
 
         mav.addObject("estudiantes", estudiantes);
-        mav.setViewName("main");
+        mav.setViewName("listado");
         return mav;
     }
     @RequestMapping("/inicio")
